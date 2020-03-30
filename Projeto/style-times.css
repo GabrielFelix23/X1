@@ -1,0 +1,30 @@
+section{
+    background: white;
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 20px;
+}
+img{
+    width: 100px;
+    margin: 10PX;
+    cursor: pointer;
+    transition: all .5s;
+    border: 10px solid transparent;
+}
+img:hover{
+    border: 10px solid green;
+    border-radius: 50%;
+}
+.voltar a img{
+    width: 50px;
+    float: right;
+    margin-bottom: -5%
+} 
+h2{
+    font-size: 40px;
+    margin: 50px;
+}

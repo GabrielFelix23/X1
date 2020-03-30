@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>X1 - GamePlay</title>
+   
+    <link rel="icon" href="imagens/icone-bola.png">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style-index.css" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="jquery-2.2.1.js"></script>
+    <script src="script-index.js"></script>
+    
+</head>
+    <body>
+        <div class="capa">
+            <div class="texto-capa">
+                <a href="" class="btn btn-custom btn-verde btn-lg"data-toggle="modal" data-target="#janela2" onclick="telaNJogadores()">Jogar</a>
+            </div>
+        </div>
+
+       <!-- Janela2 8 Jogadores-->
+       <form class="modal fade" id="janela2">
+        
+            <div class="modal-dialog modal-sm">
+              <div class="modal-content">
+                
+                <!-- cabecalho -->
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">
+                    <span>&times;</span>
+                  </button>
+                  <h4 class="modal-title">Cadastre os Jogadores</h4>
+                  <img src="" id="img"> 
+                </div>
+    
+                <!-- corpo -->
+                <div class="modal-body">
+                    <div class="form-group" id="input1">
+                        <img src="imagens/controle-Ps4.png">
+                        <input type="name" maxlength="10" class="form-control" id="nome1" placeholder="Nome do Jogador 1:">
+                    </div>
+                    <div class="form-group" id="input2">
+                        <img src="imagens/controle-Ps4.png">    
+                        <input type="name" maxlength="10" class="form-control" id="nome2" placeholder="Nome do Jogador 2:">
+                    </div>  
+            
+                    <div class="form-group" id="input3">
+                        <img src="imagens/controle-Ps4.png" class="img-direita">
+                        <input type="name" maxlength="10" class="form-control" id="nome3" placeholder="Nome do Jogador 3:">
+                    </div>
+                    <div class="form-group" id="input4">
+                        <img src="imagens/controle-Ps4.png" class="img-direita">
+                        <input type="name" maxlength="10" class="form-control" id="nome4" placeholder="Nome do Jogador 4:">
+                    </div>
+                </div>
+    
+                <!-- rodape -->
+                <div class="modal-footer">
+                     <button type="button" class="btn btn-default" id="click" onclick="maisDois()">
+                        +2
+                    </button>
+
+                    <button type="button" class="btn btn-default" id="clickMenos" onclick="menosDois()">
+                        -2
+                    </button>
+                    
+                    <button type="button" class="btn btn-primary" onclick="prontoNJogadores()" id="gerar">
+                        Gerar 
+                    </button>
+
+                    <button type="button" class="btn btn-success" onclick="gerarTimes()" id="pronto">
+                        Pronto
+                    </button>    
+                </div>                  
+              </div>
+            </div>
+        </form>   
+    </body>
+</html>
