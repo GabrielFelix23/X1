@@ -1,2 +1,2 @@
 #  X1
- Um programa onde o jogador pode inserir até 4 jogadores e gerar duplas e times aleatórios para jogar com os amigos.
+Um programa feito para uma boa gameplay de FIFA com os amigos, com a ideia de fazer duplas aleatórias, gerando times que você jamais imaginaria que poderia cair para a dupla.
