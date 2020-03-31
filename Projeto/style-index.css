@@ -41,15 +41,15 @@ a.btn-verde:hover {
 a.btn-verde:visited {
 	color: white
 }
-a.btn-branco {
+a.btn-laranja {
 	border: 2px solid white;
 }
-a.btn-branco:hover {
-	background-color: green;
+a.btn-laranja:hover {
+	background-color: orange;
     color: white;
     border: 2px solid white;
 }
-a.btn-branco:visited {
+a.btn-laranja:visited {
 	color: white
 }
 

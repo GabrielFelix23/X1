@@ -1,18 +1,21 @@
-//Botão N Jogadores
-function telaNJogadores(){
-    $('#pronto').hide()
-    $('#input3').hide()
-    $('#input4').hide()
-    $('#clickMenos').hide()
+//botão times
+function times(){
+    window.open('times.html')
 }
+
+//Botão jogar
+function jogar(){
+    $('#pronto').hide()
+}
+
 //Gerar as duplas
-function prontoNJogadores(){   
+function gerarDupla(){  
     var nome1 = document.querySelector('#nome1')
     var nome2 = document.querySelector('#nome2')
     var nome3 = document.querySelector('#nome3')
     var nome4 = document.querySelector('#nome4')
     
-    if(nome1.value.length == 0 || nome2.value.length == 0 || nome3.value.length == 0 || nome4.value.length == 0){ //retirar espaços em branco da string
+    if(nome1.value.length == 0 || nome2.value.length == 0 || nome3.value.length == 0 || nome4.value.length == 0){
         alert("[AVISO] Existe campos vazios.");
     }
     else if(nome1.value === nome2.value ||nome2.value == nome1.value || nome3.value === nome4.value ||nome4.value == nome3.value){
@@ -34,29 +37,8 @@ function prontoNJogadores(){
         $('#pronto').show()
     }
 }
-//tela dos times
+
+//Botão pronto
 function gerarTimes(){
     window.open('times.html')
 }
-//+2 jogador
-function maisDois(){
-    const click = document.getElementById('#click')
-   
-    if(click != false){
-        $('#input3').show()
-        $('#input4').show()
-    }
-    $('#click').hide()
-    $('#clickMenos').show()
-}
-function menosDois(){
-    $('#input3').hide()
-    $('#input4').hide()
-    $('#clickMenos').hide()
-    $('#click').show()
-}
-
-    
-
-
-

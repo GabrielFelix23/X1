@@ -20,12 +20,14 @@
     <body>
         <div class="capa">
             <div class="texto-capa">
-                <a href="" class="btn btn-custom btn-verde btn-lg"data-toggle="modal" data-target="#janela2" onclick="telaNJogadores()">Jogar</a>
+                <a href="" class="btn btn-custom btn-laranja btn-lg" data-toggle="modal" onclick="times()">Times</a>
+
+                <a href="" class="btn btn-custom btn-verde btn-lg"data-toggle="modal" data-target="#janela" onclick="jogar()">Jogar</a>
             </div>
         </div>
 
-       <!-- Janela2 8 Jogadores-->
-       <form class="modal fade" id="janela2">
+       <!-- Janela 4 Jogadores-->
+       <form class="modal fade" id="janela">
         
             <div class="modal-dialog modal-sm">
               <div class="modal-content">
@@ -36,25 +38,24 @@
                     <span>&times;</span>
                   </button>
                   <h4 class="modal-title">Cadastre os Jogadores</h4>
-                  <img src="" id="img"> 
                 </div>
     
                 <!-- corpo -->
                 <div class="modal-body">
-                    <div class="form-group" id="input1">
+                    <div class="form-group">
                         <img src="imagens/controle-Ps4.png">
                         <input type="name" maxlength="10" class="form-control" id="nome1" placeholder="Nome do Jogador 1:">
                     </div>
-                    <div class="form-group" id="input2">
+                    <div class="form-group">
                         <img src="imagens/controle-Ps4.png">    
                         <input type="name" maxlength="10" class="form-control" id="nome2" placeholder="Nome do Jogador 2:">
                     </div>  
             
-                    <div class="form-group" id="input3">
+                    <div class="form-group">
                         <img src="imagens/controle-Ps4.png" class="img-direita">
                         <input type="name" maxlength="10" class="form-control" id="nome3" placeholder="Nome do Jogador 3:">
                     </div>
-                    <div class="form-group" id="input4">
+                    <div class="form-group">
                         <img src="imagens/controle-Ps4.png" class="img-direita">
                         <input type="name" maxlength="10" class="form-control" id="nome4" placeholder="Nome do Jogador 4:">
                     </div>
@@ -62,15 +63,7 @@
     
                 <!-- rodape -->
                 <div class="modal-footer">
-                     <button type="button" class="btn btn-default" id="click" onclick="maisDois()">
-                        +2
-                    </button>
-
-                    <button type="button" class="btn btn-default" id="clickMenos" onclick="menosDois()">
-                        -2
-                    </button>
-                    
-                    <button type="button" class="btn btn-primary" onclick="prontoNJogadores()" id="gerar">
+                    <button type="button" class="btn btn-primary" onclick="gerarDupla()" id="gerar">
                         Gerar 
                     </button>
 
