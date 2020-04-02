@@ -1,25 +1,25 @@
 html, body, .capa {
 	height: 100%;
-	overflow: auto;
+	overflow: auto
 }
 
 body {
 	background: url('imagens/wallpaper.jpg');
     background-attachment: fixed;
 	font-family: Helvetica,Arial,sans-serif;
-	overflow-x: hidden;
+	overflow-x: hidden
 }
 /* -- Imagem de capa -- */
 .capa {
 	display: table;
-	width: 100%;
+	width: 100%
 }
 
 .texto-capa {
 	text-align: center;
 	color: white;
 	display: table-cell;
-	vertical-align: middle;
+	vertical-align: middle
 }
 /* -- Botoes -- */
 .btn-custom {
@@ -28,7 +28,7 @@ body {
 	-webkit-border-radius: 500px;
     -moz-border-radius: 500px;
     text-transform: uppercase;
-    transition: background 0.4s, color 0.4s;
+    transition: background 0.4s, color 0.4s
 }
 
 a.btn-verde {
@@ -36,27 +36,26 @@ a.btn-verde {
 }
 a.btn-verde:hover {
 	background-color: rgb(51, 130, 51);
-	color: white;
+	color: white
 }
 a.btn-verde:visited {
 	color: white
 }
 a.btn-laranja {
-	border: 2px solid white;
+	border: 2px solid white
 }
 a.btn-laranja:hover {
 	background-color: orange;
     color: white;
-    border: 2px solid white;
+    border: 2px solid white
 }
 a.btn-laranja:visited {
 	color: white
 }
-
 /*Imagem*/
 img.img-direita{
-    float: right;
+    float: right
 }
 h1.x {
-    text-align: center;
+    text-align: center
 }
