@@ -1,8 +1,3 @@
-//botão times
-function times(){
-    window.open('times.html')
-}
-
 //Botão jogar
 function jogar(){
     $('#pronto').hide()
@@ -36,9 +31,4 @@ function gerarDupla(){
         }
         $('#pronto').show()
     }
-}
-
-//Botão pronto
-function gerarTimes(){
-    window.open('times.html')
 }
