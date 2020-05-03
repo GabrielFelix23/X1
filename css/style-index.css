@@ -5,7 +5,7 @@ html, body, .capa {
 
 body {
 	background: url('../imagens/wallpaper.jpg') no-repeat center center fixed;
-	font-family: Helvetica,Arial,sans-serif;
+	font-family: 'Josefin SanS';
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -58,6 +58,7 @@ a.btn-laranja:visited {
 img.img-direita{
     float: right
 }
-h1.x {
+h1 {
+	font-family: 'Berkshire Swash';
     text-align: center
 }
