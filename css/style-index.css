@@ -4,10 +4,12 @@ html, body, .capa {
 }
 
 body {
-	background: url('../imagens/wallpaper.jpg');
-    background-attachment: fixed;
+	background: url('../imagens/wallpaper.jpg') no-repeat center center fixed;
 	font-family: Helvetica,Arial,sans-serif;
-	overflow-x: hidden
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
 }
 /* -- Imagem de capa -- */
 .capa {
