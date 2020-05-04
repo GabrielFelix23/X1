@@ -1,5 +1,4 @@
 .fundo-personalizado{
-    background: white;
     width: auto;
     height: auto;
     border-radius: 10px;
@@ -20,10 +19,12 @@ img:hover{
     border-radius: 50%;
 }
 .voltar a img{
-    width: 50px;
+    width: 65px;
     float: right;
     margin-bottom: -5%
 } 
-h1{
-    padding: 20px;
+h2{
+    font-size: 50px;
+    color: white;
+    margin: 10px;
 }
