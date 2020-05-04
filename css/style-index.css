@@ -14,7 +14,7 @@ body {
 /* -- Imagem de capa -- */
 .capa {
 	display: table;
-	width: 100%;
+	width: 80%;
 }
 
 .texto-capa {
@@ -61,4 +61,8 @@ img.img-direita{
 h1 {
 	font-family: 'Berkshire Swash';
     text-align: center
+}
+.info{
+	width: 40px;
+	margin: 10px;
 }
