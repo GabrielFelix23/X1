@@ -14,7 +14,7 @@ body {
 /* -- Imagem de capa -- */
 .capa {
 	display: table;
-	width: 80%;
+	width: 82.8%;
 }
 
 .texto-capa {
@@ -63,6 +63,7 @@ h1 {
     text-align: center
 }
 .info{
-	width: 50px;
-	margin: 7px;
+	width: 46px;
+	margin: 5px;
+	cursor: pointer;
 }

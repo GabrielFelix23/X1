@@ -19,7 +19,36 @@
 </head>
     <body>
         <div class="capa">
-        <img class="info" src="imagens/info.png" alt="">
+           <img class="info" src="imagens/info.png" alt="" class="btn btn-custom "data-toggle="modal" data-target="#janela-info">
+
+            <!-- Janela informações-->
+            <form class="modal fade" id="janela-info">
+                
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                    
+                        <!-- cabecalho -->
+                        <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                        <h4 class="modal-title">Informações rápidas</h4>
+                        </div>
+
+                        <!-- corpo -->
+                        <div class="modal-body">
+                            
+                        </div>
+
+                        <!-- rodape -->
+                        <div class="modal-footer">
+                            <a href="" class="btn btn-primary" data-toggle="modal" data-target="#janela">
+                                Vamos jogar ?
+                            </a> 
+                        </div>                  
+                    </div>
+                </div>
+            </form>   
 
             <div class="texto-capa">
                 <h1>X2</h1>
@@ -33,48 +62,48 @@
        <form class="modal fade" id="janela">
         
             <div class="modal-dialog modal-sm">
-              <div class="modal-content">
+                <div class="modal-content">
                 
-                <!-- cabecalho -->
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">
-                    <span>&times;</span>
-                  </button>
-                  <h4 class="modal-title">Cadastre os Jogadores</h4>
-                </div>
-    
-                <!-- corpo -->
-                <div class="modal-body">
-                    <div class="form-group">
-                        <img src="imagens/controle-Ps4.png">
-                        <input type="name" maxlength="10" class="form-control" id="nome1" placeholder="Nome do Jogador 1:">
-                    </div>
-                    <div class="form-group">
-                        <img src="imagens/controle-Ps4.png">    
-                        <input type="name" maxlength="10" class="form-control" id="nome2" placeholder="Nome do Jogador 2:">
-                    </div>  
-            
-                    <div class="form-group">
-                        <img src="imagens/controle-Ps4.png" class="img-direita">
-                        <input type="name" maxlength="10" class="form-control" id="nome3" placeholder="Nome do Jogador 3:">
-                    </div>
-                    <div class="form-group">
-                        <img src="imagens/controle-Ps4.png" class="img-direita">
-                        <input type="name" maxlength="10" class="form-control" id="nome4" placeholder="Nome do Jogador 4:">
-                    </div>
-                </div>
-    
-                <!-- rodape -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" onclick="gerarDupla()" id="gerar">
-                        Gerar 
+                    <!-- cabecalho -->
+                    <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
                     </button>
+                    <h4 class="modal-title">Cadastre os Jogadores</h4>
+                    </div>
+        
+                    <!-- corpo -->
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <img src="imagens/controle-Ps4.png">
+                            <input type="name" maxlength="10" class="form-control" id="nome1" placeholder="Nome do Jogador 1:">
+                        </div>
+                        <div class="form-group">
+                            <img src="imagens/controle-Ps4.png">    
+                            <input type="name" maxlength="10" class="form-control" id="nome2" placeholder="Nome do Jogador 2:">
+                        </div>  
+                
+                        <div class="form-group">
+                            <img src="imagens/controle-Ps4.png" class="img-direita">
+                            <input type="name" maxlength="10" class="form-control" id="nome3" placeholder="Nome do Jogador 3:">
+                        </div>
+                        <div class="form-group">
+                            <img src="imagens/controle-Ps4.png" class="img-direita">
+                            <input type="name" maxlength="10" class="form-control" id="nome4" placeholder="Nome do Jogador 4:">
+                        </div>
+                    </div>
+        
+                    <!-- rodape -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" onclick="gerarDupla()" id="gerar">
+                            Gerar 
+                        </button>
 
-                    <a href="times.html" class="btn btn-success" id="pronto">
-                        Pronto
-                    </a>    
-                </div>                  
-              </div>
+                        <a href="times.html" class="btn btn-success" id="pronto">
+                            Pronto
+                        </a>    
+                    </div>                  
+                </div>
             </div>
         </form>   
     </body>
