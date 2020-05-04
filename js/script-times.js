@@ -18,7 +18,7 @@ function gerarTimesBrasileiro(){
         "Vitória",
     ];
     var nome = times[Math.ceil(Math.random() * (times.length - 1))];
-    alert(nome);
+    Swal.fire(nome);
 }
 function gerarTimesArgentino(){
     var times = [
@@ -50,7 +50,7 @@ function gerarTimesArgentino(){
         'Vélez Sarsfield'
     ];
     var nome = times[Math.ceil(Math.random() * (times.length - 1))];
-    alert(nome);
+    Swal.fire(nome);
 }
 function gerarTimesEspanhol(){
     var times = [
@@ -77,7 +77,7 @@ function gerarTimesEspanhol(){
          
     ];
     var nome = times[Math.ceil(Math.random() * (times.length - 1))];
-    alert(nome);
+    Swal.fire(nome);
 }
 function gerarTimesFrances(){
     var times = [
@@ -103,7 +103,7 @@ function gerarTimesFrances(){
         'Toulouse FC'
     ];
     var nome = times[Math.ceil(Math.random() * (times.length - 1))];
-    alert(nome);
+    Swal.fire(nome);
 }
 function gerarTimesItalia(){
     var times = [
@@ -129,7 +129,7 @@ function gerarTimesItalia(){
         'Udinese'
     ];
     var nome = times[Math.ceil(Math.random() * (times.length - 1))];
-    alert(nome);
+    Swal.fire(nome);
 }
 
 function gerarTimesInglaterra(){
@@ -156,7 +156,7 @@ function gerarTimesInglaterra(){
         'Wolves'
     ];
     var nome = times[Math.ceil(Math.random() * (times.length - 1))];
-    alert(nome);
+    Swal.fire(nome);
 }
 function gerarTimesAlemanha(){
     var times = [
@@ -180,7 +180,7 @@ function gerarTimesAlemanha(){
         'Werder Bremen'
     ];
     var nome = times[Math.ceil(Math.random() * (times.length - 1))];
-    alert(nome);
+    Swal.fire(nome);
 }
 function gerarTimesAustralia(){
     var times = [
@@ -196,7 +196,7 @@ function gerarTimesAustralia(){
         'WS Wanderers'
     ];
     var nome = times[Math.ceil(Math.random() * (times.length - 1))];
-    alert(nome);
+    Swal.fire(nome);
 }
 function gerarTimesChile(){
     var times = [
@@ -218,7 +218,7 @@ function gerarTimesChile(){
         'Unión La Calera'
     ];
     var nome = times[Math.ceil(Math.random() * (times.length - 1))];
-    alert(nome);
+    Swal.fire(nome);
 }
 
 function gerarTimesJapao(){
@@ -243,7 +243,7 @@ function gerarTimesJapao(){
         'Yokohama FM'
     ];
     var nome = times[Math.ceil(Math.random() * (times.length - 1))];
-    alert(nome);
+    Swal.fire(nome);
 }
 
 function gerarTimesNoruega(){
@@ -266,7 +266,7 @@ function gerarTimesNoruega(){
         'Vålerenga Fotball'
     ];
     var nome = times[Math.ceil(Math.random() * (times.length - 1))];
-    alert(nome);
+    Swal.fire(nome);
 }
 
 function gerarTimesSuecia(){
@@ -290,7 +290,7 @@ function gerarTimesSuecia(){
  
     ];
     var nome = times[Math.ceil(Math.random() * (times.length - 1))];
-    alert(nome);
+    Swal.fire(nome);
 }
 
 function gerarTimesColombia(){
@@ -317,7 +317,7 @@ function gerarTimesColombia(){
         'Rionegro Águilas'      
     ];
     var nome = times[Math.ceil(Math.random() * (times.length - 1))];
-    alert(nome);
+    Swal.fire(nome);
 }
 
 function gerarTimesEstadosUnidos(){
@@ -347,7 +347,7 @@ function gerarTimesEstadosUnidos(){
         'Whitecaps FC'    
     ];
     var nome = times[Math.ceil(Math.random() * (times.length - 1))];
-    alert(nome);
+    Swal.fire(nome);
 }
 
 function gerarTimesPortugal(){
@@ -370,7 +370,7 @@ function gerarTimesPortugal(){
         'V. Setúbal'
     ];
     var nome = times[Math.ceil(Math.random() * (times.length - 1))];
-    alert(nome);
+    Swal.fire(nome);
 }
 
 function gerarTimesPolonia(){
@@ -390,7 +390,7 @@ function gerarTimesPolonia(){
         'Wisla Kraków'
     ];
     var nome = times[Math.ceil(Math.random() * (times.length - 1))];
-    alert(nome);
+    Swal.fire(nome);
 }
 
 function gerarTimesMexico(){
@@ -415,7 +415,7 @@ function gerarTimesMexico(){
         'Veracruz'
     ];
     var nome = times[Math.ceil(Math.random() * (times.length - 1))];
-    alert(nome);
+    Swal.fire(nome);
 }
 
 function gerarTimesIrlanda(){
@@ -430,7 +430,7 @@ function gerarTimesIrlanda(){
         'Waterford FC'
     ];
     var nome = times[Math.ceil(Math.random() * (times.length - 1))];
-    alert(nome);
+    Swal.fire(nome);
 }
 
 function gerarTimesDinamarca(){
@@ -451,7 +451,7 @@ function gerarTimesDinamarca(){
         'Vendsyssel FF'
     ];
     var nome = times[Math.ceil(Math.random() * (times.length - 1))];
-    alert(nome);
+    Swal.fire(nome);
 }
 
 function gerarTimesCoreia(){
@@ -470,7 +470,7 @@ function gerarTimesCoreia(){
         'Ulsan Hyundai'
     ];
     var nome = times[Math.ceil(Math.random() * (times.length - 1))];
-    alert(nome);
+    Swal.fire(nome);
 }
 
 function gerarTimesChile(){
@@ -493,7 +493,7 @@ function gerarTimesChile(){
         'Unión La Calera',
     ];
     var nome = times[Math.ceil(Math.random() * (times.length - 1))];
-    alert(nome);
+    Swal.fire(nome);
 }
 
 function gerarTimesBelgica(){
@@ -516,7 +516,7 @@ function gerarTimesBelgica(){
         'Zulte-Waregem'
     ];
     var nome = times[Math.ceil(Math.random() * (times.length - 1))];
-    alert(nome);
+    Swal.fire(nome);
 }
 
 function gerarTimesAustria(){
@@ -535,7 +535,7 @@ function gerarTimesAustria(){
         'Wolfsberger AC'
     ];
     var nome = times[Math.ceil(Math.random() * (times.length - 1))];
-    alert(nome);
+    Swal.fire(nome);
 }
 
 function gerarTimessuica(){
@@ -550,7 +550,7 @@ function gerarTimessuica(){
         'Neuchâtel Xamax'
     ];
     var nome = times[Math.ceil(Math.random() * (times.length - 1))];
-    alert(nome);
+    Swal.fire(nome);
 }
 
 function gerarTimesTurquia(){
@@ -576,7 +576,7 @@ function gerarTimesTurquia(){
  
     ];
     var nome = times[Math.ceil(Math.random() * (times.length - 1))];
-    alert(nome);
+    Swal.fire(nome);
 }
 
 function gerarTimesArabiaSaudita(){
@@ -600,7 +600,7 @@ function gerarTimesArabiaSaudita(){
  
     ];
     var nome = times[Math.ceil(Math.random() * (times.length - 1))];
-    alert(nome);
+    Swal.fire(nome);
 }
 
 function gerarTimesTurquia(){
@@ -624,7 +624,7 @@ function gerarTimesTurquia(){
  
     ];
     var nome = times[Math.ceil(Math.random() * (times.length - 1))];
-    alert(nome);
+    Swal.fire(nome);
 }
 
 function gerarTimesHolanda(){
@@ -650,5 +650,5 @@ function gerarTimesHolanda(){
 
     ];
     var nome = times[Math.ceil(Math.random() * (times.length - 1))];
-    alert(nome);
+    Swal.fire(nome);
 }
