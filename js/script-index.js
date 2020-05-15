@@ -10,24 +10,58 @@ function gerarDupla(){
     var nome3 = document.querySelector('#nome3')
     var nome4 = document.querySelector('#nome4')
     
-    if(nome1.value.length == 0 || nome2.value.length == 0 || nome3.value.length == 0 || nome4.value.length == 0){
-        alert("[AVISO] Existe campos vazios.");
+    if(!nome1.value.length || typeof nome1.value.length == undefined || nome1.value.length == null){
+        Swal.fire("[AVISO] Existe campos vazios.");
     }
-    else if(nome1.value === nome2.value ||nome2.value == nome1.value || nome3.value === nome4.value ||nome4.value == nome3.value){
-        alert("Não pode apelidos iguais.")
+    else if(!nome2.value.length || typeof nome2.value.length == undefined || nome2.value.length == null){
+        Swal.fire("[AVISO] Existe campos vazios.");
+    }
+    else if(!nome3.value.length || typeof nome3.value.length == undefined || nome3.value.length == null){
+        Swal.fire("[AVISO] Existe campos vazios.");
+    }
+    else if(!nome4.value.length || typeof nome4.value.length == undefined || nome4.value.length == null){
+        Swal.fire("[AVISO] Existe campos vazios.");
+    }
+    else if(nome1 == nome2 || nome1 == nome3 || nome1 == nome4 ||
+        nome2 == nome1| nome2 == nome3 || nome2 == nome4 ||
+        nome3 == nome1 || nome3 == nome2 || nome3 == nome4 ||
+        nome4 == nome1 || nome4 == nome2 || nome4 == nome3){
+        Swal.fire("Não pode apelidos iguais.")
     }
     else{        
-        for(var i = 1; i <= 6; i++){
-            var nomeJogadores = [
-                naoIdentificado = String(nome1.value),
+        var nomeJogadores = [
+            naoIdentificado = String(nome1.value),
+           
+            n1 = nome1.value,
+            n2 = nome2.value,
+            n3 = nome3.value,
+            n4 = nome4.value,
+        ]
+        var nome1 = nomeJogadores[Math.ceil(Math.random() * (nomeJogadores.length - 1))]
+        var nome2 = nomeJogadores[Math.ceil(Math.random() * (nomeJogadores.length - 1))]
+        var nome3 = nomeJogadores[Math.ceil(Math.random() * (nomeJogadores.length - 1))]
+        var nome4 = nomeJogadores[Math.ceil(Math.random() * (nomeJogadores.length - 1))]
 
-                n1 = String(nome1.value),
-                n2 = String(nome2.value),
-                n3 = String(nome3.value),
-                n4 = String(nome4.value)
-            ]
-            var nome = nomeJogadores[Math.ceil(Math.random() * (nomeJogadores.length - 1))];
-            alert(nome)
+        if(nome1 === nome2){
+            return nome1, nome3 
+        }
+        else if(nome3 === nome1){
+            return nome3, nome4 
+        }
+        else if(nome4 === nome3){
+            return nome4, nome2 
+        }
+        else if(nome2 === nome3){
+            return nome2, nome1
+        }
+        else if(nome1 === nome4){
+            return nome1, nome2
+        }
+        else if(nome2 === nome4){
+            return nome2, nome3
+        }
+        else{   
+            Swal.fire(nome1 + " e " + nome2 + "\n" + nome3 + " e " + nome4)
         }
         $('#pronto').show()
     }
