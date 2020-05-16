@@ -41,8 +41,10 @@ function gerarDupla(){
         var nome2 = nomeJogadores[Math.ceil(Math.random() * (nomeJogadores.length - 1))]
         var nome3 = nomeJogadores[Math.ceil(Math.random() * (nomeJogadores.length - 1))]
         var nome4 = nomeJogadores[Math.ceil(Math.random() * (nomeJogadores.length - 1))]
+        
+        Swal.fire("Duplas:<br>" + nome1 + " e " + nome2 + "\nX\n" + nome3 + " e " + nome4)
 
-        if(nome1 === nome2){
+        /*if(nome1 === nome2){
             return nome1, nome3 
         }
         else if(nome3 === nome1){
@@ -61,8 +63,9 @@ function gerarDupla(){
             return nome2, nome3
         }
         else{   
-            Swal.fire(nome1 + " e " + nome2 + "\n" + nome3 + " e " + nome4)
-        }
+            Swal.fire("Duplas:<br>" + nome1 + " e " + nome2 + "\nX\n" + nome3 + " e " + nome4)
+
+        }*/
         $('#pronto').show()
     }
 }
