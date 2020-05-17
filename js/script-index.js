@@ -28,44 +28,25 @@ function gerarDupla(){
         nome4 == nome1 || nome4 == nome2 || nome4 == nome3){
         Swal.fire("Não pode apelidos iguais.")
     }
-    else{        
-        var nomeJogadores = [
-            naoIdentificado = String(nome1.value),
-           
+    else{   
+        const nomejogador = [ 
             n1 = nome1.value,
             n2 = nome2.value,
             n3 = nome3.value,
             n4 = nome4.value,
         ]
-        var nome1 = nomeJogadores[Math.ceil(Math.random() * (nomeJogadores.length - 1))]
-        var nome2 = nomeJogadores[Math.ceil(Math.random() * (nomeJogadores.length - 1))]
-        var nome3 = nomeJogadores[Math.ceil(Math.random() * (nomeJogadores.length - 1))]
-        var nome4 = nomeJogadores[Math.ceil(Math.random() * (nomeJogadores.length - 1))]
-        
-        Swal.fire("Duplas:<br>" + nome1 + " e " + nome2 + "\nX\n" + nome3 + " e " + nome4)
+        let jogador = []
 
-        /*if(nome1 === nome2){
-            return nome1, nome3 
+        for(let i=0; i < 4; i++){
+            const nomeAleatorio = Math.floor(Math.random() * nomejogador.length)
+            if(!jogador.includes(nomejogador[nomeAleatorio])){
+                jogador.push(nomejogador[nomeAleatorio])
+            }
+            else{
+                i--
+            }
+            alert(jogador[i])
         }
-        else if(nome3 === nome1){
-            return nome3, nome4 
-        }
-        else if(nome4 === nome3){
-            return nome4, nome2 
-        }
-        else if(nome2 === nome3){
-            return nome2, nome1
-        }
-        else if(nome1 === nome4){
-            return nome1, nome2
-        }
-        else if(nome2 === nome4){
-            return nome2, nome3
-        }
-        else{   
-            Swal.fire("Duplas:<br>" + nome1 + " e " + nome2 + "\nX\n" + nome3 + " e " + nome4)
-
-        }*/
         $('#pronto').show()
     }
 }
