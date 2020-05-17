@@ -31,21 +31,31 @@ function gerarDupla(){
     else{   
         const nomejogador = [ 
             n1 = nome1.value,
-            n2 = nome2.value,
-            n3 = nome3.value,
-            n4 = nome4.value,
+            n4 = nome4.value
         ]
         let jogador = []
 
-        for(let i=0; i < 4; i++){
+        const nomejogador2 = [ 
+            n2 = nome2.value,
+            n3 = nome3.value,
+        ]
+        let jogador2 = []
+
+
+        for(let i=0; i < 2; i++){
             const nomeAleatorio = Math.floor(Math.random() * nomejogador.length)
+            const rdm1 = Math.floor(Math.random() * nomejogador2.length)
+
             if(!jogador.includes(nomejogador[nomeAleatorio])){
                 jogador.push(nomejogador[nomeAleatorio])
+            }
+            if(!jogador2.includes(nomejogador2[rdm1])){
+                jogador2.push(nomejogador2[rdm1])
             }
             else{
                 i--
             }
-            alert(jogador[i])
+            alert("Dupla:\n" + jogador[i] + " e " + jogador2[i])
         }
         $('#pronto').show()
     }
